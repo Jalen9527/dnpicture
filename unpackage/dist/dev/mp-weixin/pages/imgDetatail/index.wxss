@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.detatail.data-v-a3bcae0a {
+  margin-bottom: 80rpx;
+}
+.detatail .user_info.data-v-a3bcae0a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0 30rpx;
+  margin: 30rpx 0rpx;
+}
+.detatail .user_info .user_avatar.data-v-a3bcae0a {
+  width: 16%;
+}
+.detatail .user_info .user_avatar image.data-v-a3bcae0a {
+  width: 88rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.detatail .user_info .user_desc.data-v-a3bcae0a {
+  margin-left: 10rpx;
+}
+.detatail .user_info .user_desc .user_name.data-v-a3bcae0a {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #000;
+}
+.detatail .user_info .user_desc .user_time.data-v-a3bcae0a {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #909399;
+}
+.detatail .imgDetatail_img image.data-v-a3bcae0a {
+  width: 100%;
+  height: 100%;
+}
+.detatail .user_rank.data-v-a3bcae0a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 32rpx;
+  color: #808080;
+  height: 60rpx;
+  border-bottom: 1rpx solid #D3D3D3;
+}
+.detatail .user_rank .rank.data-v-a3bcae0a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.detatail .user_rank .user_collect.data-v-a3bcae0a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.detatail .album_warp.data-v-a3bcae0a {
+  border-bottom: #D3D3D3 solid 1rpx;
+  padding: 10rpx;
+}
+.detatail .album_warp .album_title.data-v-a3bcae0a {
+  font-size: 30rpx;
+  padding: 10rpx 0;
+}
+.detatail .album_warp .album_info.data-v-a3bcae0a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.detatail .album_warp .album_info .album_img.data-v-a3bcae0a {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.detatail .album_warp .album_info .album_img image.data-v-a3bcae0a {
+  width: 200rpx;
+  height: 200rpx;
+}
+.detatail .album_warp .album_info .album_desc.data-v-a3bcae0a {
+  -webkit-box-flex: 2.3;
+  -webkit-flex: 2.3;
+          flex: 2.3;
+  font-size: 30rpx;
+  overflow: hidden;
+}
+.detatail .album_warp .album_info .album_desc .album_but.data-v-a3bcae0a {
+  background-color: #d52a7e;
+  padding: 5rpx 20rpx;
+  color: #FFFFFF;
+  font-size: 30rpx;
+}
+.detatail .album_warp .album_info .album_desc .album_name.data-v-a3bcae0a {
+  padding: 5rpx 0;
+}
+.detatail .album_warp .album_info .album_desc .a_desc.data-v-a3bcae0a {
+  color: #777777;
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.detatail .album_warp .album_info .album_desc .album_icon.data-v-a3bcae0a {
+  position: absolute;
+  right: 20rpx;
+  top: 40rpx;
+  color: #6E6E6E;
+}
+.detatail .comment .comment_title.data-v-a3bcae0a {
+  padding: 10rpx 10rpx;
+}
+.detatail .comment .comment_title .comment_icon.data-v-a3bcae0a {
+  color: #d52a7e;
+  font-size: 32rpx;
+}
+.detatail .comment .comment_title .comment_text.data-v-a3bcae0a {
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  color: #333333;
+  font-weight: 600;
+}
+.detatail .comment .common_item.data-v-a3bcae0a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  border-bottom: 8rpx solid #F2F6FC;
+  margin: 20rpx 0;
+  padding-bottom: 40rpx;
+}
+.detatail .comment .common_item .comment_avatar.data-v-a3bcae0a {
+  padding: 10rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.detatail .comment .common_item .comment_avatar image.data-v-a3bcae0a {
+  width: 100rpx;
+  height: 100rpx;
+}
+.detatail .comment .common_item .comment_desc.data-v-a3bcae0a {
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+          flex: 5;
+  padding: 10rpx;
+}
+.detatail .comment .common_item .comment_desc .comment_name.data-v-a3bcae0a {
+  font-size: 28rpx;
+  color: #777777;
+}
+.detatail .comment .common_item .comment_desc .comment_time.data-v-a3bcae0a {
+  font-size: 26rpx;
+  color: #6E6E6E;
+}
+.detatail .comment .common_item .comment_desc .comment_title.data-v-a3bcae0a {
+  font-size: 26rpx;
+  color: #6E6E6E;
+}
+.detatail .comment .common_item .comment_desc .comment_content.data-v-a3bcae0a {
+  color: #000;
+  font-size: 30rpx;
+}
+.detatail .comment .common_item .comment_desc .comment_collect.data-v-a3bcae0a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  right: 20rpx;
+  bottom: 10rpx;
+}
+.detatail .comment .common_item .comment_desc .comment_collect .collect.data-v-a3bcae0a {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.detatail .comment .common_item .comment_desc .comment_collect text.data-v-a3bcae0a {
+  font-size: 26rpx;
+  color: #777777;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.detatail .download.data-v-a3bcae0a {
+  position: fixed;
+  bottom: 5rpx;
+  height: 80rpx;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.detatail .download .download_but.data-v-a3bcae0a {
+  width: 98%;
+  height: 90%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-color: #d52a7e;
+  color: #fff;
+  font-size: 35rpx;
+  font-size: 600;
+}
+

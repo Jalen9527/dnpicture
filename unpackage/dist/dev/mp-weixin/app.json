@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/horizontal/horizontal",
+    "pages/video/video",
+    "pages/search/search",
+    "pages/mine/mine",
+    "pages/home/album_info/album_info",
+    "pages/home/recommed/recommed",
+    "pages/home/album/album",
+    "pages/home/category/category",
+    "pages/home/new/new",
+    "pages/imgDetatail/index",
+    "pages/home/img_cate/img_cate"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "懂你找图",
+    "navigationBarBackgroundColor": "#000000"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/tab/homeB.png",
+        "selectedIconPath": "static/tab/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/horizontal/horizontal",
+        "iconPath": "static/tab/picB.png",
+        "selectedIconPath": "static/tab/pic.png",
+        "text": "横屏"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "iconPath": "static/tab/videoB.png",
+        "selectedIconPath": "static/tab/video.png",
+        "text": "视频"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "static/tab/searchB.png",
+        "selectedIconPath": "static/tab/search.png",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/tab/myB.png",
+        "selectedIconPath": "static/tab/my.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "go-detatail": "/components/goDetatail"
+  }
+}
