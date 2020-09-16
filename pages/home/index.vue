@@ -32,6 +32,7 @@
 		<view class="home-tabs-content"></view>
 
 	</view>
+
 </template>
 
 <script>

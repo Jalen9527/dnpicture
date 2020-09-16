@@ -20,4 +20,12 @@ export default {
 	src: url('/static/uni.ttf');
 }
 /* #endif */
+
+image{
+	width: 100%;
+}
+text{
+	font-size: 30upx;
+}
+
 </style>
