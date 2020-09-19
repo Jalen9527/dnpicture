@@ -16,7 +16,7 @@
 		<!-- 大图 -->
 		<view class="imgDetatail_img">
 			<swiper-action @swiperAction="handleSwiperAction">
-			<image :src="ImgDetatil.newThumb" mode="widthFix"></image>
+			<image :src="ImgDetatil.wp" mode="widthFix"></image>
 			</swiper-action>
 		</view>
 		

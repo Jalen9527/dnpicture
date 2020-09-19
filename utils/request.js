@@ -8,6 +8,7 @@ export default (params)=>{
 		
 		wx.request({
 			...params,
+			
 			success(res) {
 				resolve(res.data);
 			},

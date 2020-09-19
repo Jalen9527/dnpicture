@@ -62,6 +62,14 @@
             "path" : "pages/home/img_cate/img_cate",
             "style" : {}
         }
+        ,{
+            "path" : "pages/video/video-main/video-main",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/video/video-categroy/video-categroy",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

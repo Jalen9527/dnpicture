@@ -31,8 +31,8 @@
 		methods: {
 			getList(){
 				this.request({
-					 //url:'http://service.picasso.adesk.com/v1/vertical/category'
-					 url:'http://157.122.54.189:9088/image/v1/vertical/category'
+					 url:'http://service.picasso.adesk.com/v1/vertical/category'
+					 // url:'http://157.122.54.189:9088/image/v1/vertical/category'
 				}).then(res=>{
 					console.log(res);
 					this.category = res.res.category;

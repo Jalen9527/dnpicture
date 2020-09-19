@@ -1,19 +1,27 @@
 <template>
 	<view class="content">
-		
+
 		<!-- 分段器 -->
 		<view class="category-tabs">
 			<view class="category-tabs-title">
 				<uni-segmented-control :current="current" :values="items.map(v=>v.title)" @clickItem="onClickItem" style-type="text" active-color="#b4237a"></uni-segmented-control>
 			</view>
-			
-			<view class="title_inner"
-			v-for="items in vertical"
-			:key="index"
-			>
-				<image :src="items.thumb" mode="widthFix"></image>
-			</view>
 		</view>
+		<!-- 图片列表 -->
+		<scroll-view scroll-y="true" class="category-scroll" enable-flex @scrolltolower="hanldeScrolltolower">
+			<view class="category-content">
+				
+				<view class="title_inner"
+				v-for="(items,index) in vertical"
+				:key="items.id"
+				>
+					<go-detatail :list="vertical" :index="index">
+					<image :src="items.thumb" mode="aspectFill"></image>
+					</go-detatail>
+				</view>
+			</view>
+		</scroll-view>
+		
 		
 	</view>
 	
@@ -21,6 +29,7 @@
 
 <script>
 	import {uniSegmentedControl} from '@dcloudio/uni-ui';
+	import goDetatail from "@/components/goDetatail.vue";
 	export default {
 		data() {
 			return {
@@ -36,6 +45,7 @@
 					order: 'new',
 				},
 				vertical:[],
+				hasMore:true,
 			}
 		},
 		onLoad(options) {
@@ -45,24 +55,50 @@
 		},
 		methods: {
 			onClickItem(e) {
-				this.params.order = this.items[e.currentIndex].order;
+				
 				if (this.current !== e.currentIndex) {
 					this.current = e.currentIndex;
 				}
+				this.params.order = this.items[e.currentIndex].order;
+				this.vertical = [];
+				this.params.skip = 0;
 				this.getList();
 			},
 			getList() {
 				this.request({
-					url:'http://157.122.54.189:9088/image/v1/vertical/category/'+this.id+'/vertical',
+					url:'http://service.picasso.adesk.com/v1/vertical/category/'+this.id+'/vertical',
 					data:this.params
 				}).then(res => {
 					console.log(res);
-					this.vertical = res.res.vertical;
+					
+					if( res.res.vertical.length  === 0) {
+						this.hasMore = false;
+						uni.showToast({
+							title:'没有更多数据了',
+							icon: 'none',
+						})
+						return;
+					} 
+					this.vertical = [...this.vertical,...res.res.vertical];
+					
 				})
+			},
+			hanldeScrolltolower () {
+				if(this.hasMore) {
+					this.params.skip += this.params.limit;
+					this.getList();
+				} else {
+					uni.showToast({
+						title:'没有更多数据了',
+						icon: 'none',
+					})
+				}
+				
 			}
 		}, 
 		components: {
 			uniSegmentedControl,
+			goDetatail
 		},
 	}
 </script>
@@ -79,12 +115,20 @@
 			width: 70%;
 			margin: 0 auto;
 		}
-		.title_inner{
-			width: 32%;
-			padding: 5upx;
-			image{
-				width: 100%;
+	}
+	.category-scroll{
+		height: calc(100vh - 74upx);
+		.category-content{
+			display: flex;
+			flex-wrap: wrap;
+			.title_inner{
+				width: 33%;
+				image{
+					border: 5upx solid #FFFFFF;
+					width: 100%;
+				}
 			}
 		}
 	}
+	
 </style>
